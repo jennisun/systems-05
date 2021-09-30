@@ -20,10 +20,10 @@ int main() {
   printf("char: %p, int: %p, long: %p\n\n", cp, ip, lp);
 
   // 5
-  // *cp = 'b';
-  // *ip += 5;
-  // *lp += 5;
-  // printf("char: %c, int: %d, long: %ld\n\n", a, b, c);
+  *cp = 'b';
+  *ip += 5;
+  *lp += 5;
+  printf("char: %c, int: %d, long: %ld\n\n", a, b, c);
 
   // 6
   unsigned int d = 341253427;
@@ -42,6 +42,31 @@ int main() {
   printf("(DEC) %hhu %hhu %hhu %hhu\n\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
 
   // 10
+  *uic += 1;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 1) += 1;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 2) += 1;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 3) += 1;
+  printf("hex: %x, decimal, %u\n", d, d);
+
+  printf("(HEX) %hhx %hhx %hhx %hhx\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
+  printf("(DEC) %hhu %hhu %hhu %hhu\n\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
+
+  // 11
+
+  *uic += 16;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 1) += 16;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 2) += 16;
+  printf("hex: %x, decimal, %u\n", d, d);
+  *(uic + 3) += 16;
+  printf("hex: %x, decimal, %u\n", d, d);
+
+  printf("(HEX) %hhx %hhx %hhx %hhx\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
+  printf("(DEC) %hhu %hhu %hhu %hhu\n\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
 
 
 
