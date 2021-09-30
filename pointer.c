@@ -26,7 +26,7 @@ int main() {
   // printf("char: %c, int: %d, long: %ld\n\n", a, b, c);
 
   // 6
-  unsigned int d = 10;
+  unsigned int d = 10124;
   int *uip = &d;
   char *uic = &d;
 
@@ -36,6 +36,11 @@ int main() {
 
   // 8
   printf("hex: %x, decimal: %u\n\n", d, d);
+
+  // 9
+  printf("(HEX) %hhx %hhx\n", *uic, *(uic + 1));
+  printf("(DEC) %hhu %hhu\n\n", *uic, *(uic + 1));
+
 
   return 0;
 }
