@@ -68,7 +68,5 @@ int main() {
   printf("(HEX) %hhx %hhx %hhx %hhx\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
   printf("(DEC) %hhu %hhu %hhu %hhu\n\n", *uic, *(uic + 1), *(uic + 2), *(uic + 3));
 
-
-
   return 0;
 }
